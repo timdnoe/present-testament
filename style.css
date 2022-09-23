@@ -1,0 +1,516 @@
+.testament_title {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    font-family: "PMingLiU-ExtB", serif;
+    font-size: 2.07778em;
+    color:#999;
+    font-variant: small-caps;
+    line-height: 1.0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 5;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10;
+    text-align: center;
+    text-indent: 0.75pt
+    }
+.book_pre_title {
+    display: block;
+    font-family: "PMingLiU-ExtB", serif;
+    font-size: 1.60000em;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 6pt;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50;
+    page-break-after: avoid;
+    page-break-before: always;
+    page-break-inside: avoid;
+    text-align: center;
+    text-indent: 0.75pt
+    }
+.book_title {
+    display: block;
+    font-family: "PMingLiU-ExtB", serif;
+    font-size: 2.77778em;
+    font-variant: small-caps;
+    font-weight: normal;
+    letter-spacing: -0.7pt;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center
+    }
+.book_post_title {
+    display: block;
+    font-family: "PMingLiU-ExtB", serif;
+    font-size: 1.6em;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 1.2;
+    margin-bottom: 24pt;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1pt;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center;
+    text-indent: 5.75pt
+    }
+.verse_chapter_number {
+    display: block;
+    font-family: serif;
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: justify;
+    text-indent: 15pt
+    }
+.section_title {
+    color: #000;
+    display: block;
+    margin-bottom: 3.6pt;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 25pt;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    page-break-after: avoid;
+    page-break-before: always;
+    page-break-inside: avoid;
+    text-align: center;
+    text-indent: 5.75pt;
+    font-size: 1.35em;
+    }
+.chapter_number {
+    color: #000;
+    display: block;
+    font-family: "Oregon LDO", sans-serif;
+    font-size: 2.25em;
+    line-height: 1.0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    page-break-after: avoid;
+    text-align: justify;
+    text-indent: 0
+    }
+.verse_one {
+    display: block;
+    font-family: serif;
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: justify;
+    text-indent: 0
+    }
+
+.block_22(one case) {
+    color: #000;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.88889em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 1em;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+    text-indent: 0
+    }
+
+.block_25(one case) {
+    color: #000;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.88889em;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 1em;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+    text-indent: 0
+    }
+
+.block_31(new line regular text) {
+    color: #000;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.88889em;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: justify;
+    text-indent: 0
+    }
+
+.part_title {
+    display: block;
+    font-family: "PMingLiU-ExtB", serif;
+    font-size: 1.75em;
+    font-variant: small-caps;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 13pt;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 13pt;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center;
+    text-indent: 5.75pt
+    }
+
+.calibre {
+    display: block;
+    font-family: "Oregon LDO DemiBold", sans-serif;
+    font-size: 1.125em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0
+    }
+.calibre1 {
+    display: block;
+    page-break-after: always
+    }
+.calibre2 {
+    font-size: 1em;
+    line-height: 1.2;
+    vertical-align: sub
+    }
+.calibre3 {
+    display: block
+    }
+.calibre4 {
+    white-space: pre-wrap
+    }
+.chapter_number_frame {
+    display: block;
+    float: left;
+    margin-bottom: -7;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0.5em;
+    padding-top: 0
+    }
+
+.text_1 {
+    font-family: "Times New Roman", serif;
+    font-size: 1.0em
+    }
+.chapter_number_text {
+    line-height: 1.2;
+    vertical-align: -2pt
+    }
+.text_italics {
+    color: #000;
+    font-family: "Times New Roman", serif;
+    font-size: 1.0em;
+    font-style: italic;
+    letter-spacing: 0
+    }
+.text_verse_chapter_number {
+    color: #FFF;
+    font-family: "Times New Roman", serif;
+    font-size: 0.001em;
+    display: none;
+    }
+.text_verse_number {
+    color: #000;
+    font-family: "Gill Sans MT", sans-serif;
+    font-size: 0.66667em;
+    font-weight: bold;
+    vertical-align: 2pt
+    }
+.text_normal {
+    color: #000;
+    font-family: "Times New Roman", serif;
+    font-size: 1.0em
+    }
+.text_bold_italics {
+    color: #000;
+    font-family: "Times New Roman", serif;
+    font-size: 1.0em;
+    font-style: italic;
+    font-weight: bold
+    }
+.text_bold {
+    color: #000;
+    font-family: "Times New Roman", serif;
+    font-size: 1.0em;
+    font-weight: bold
+    }
+.text_verse_one {
+    color: #FFF;
+    font-family: "Gill Sans MT", sans-serif;
+    font-size: 0.37037em;
+    font-weight: bold;
+    vertical-align: 2pt;
+    display: none
+    }
+
+.text_277 {
+    font-family: "Oregon LDO DemiBold", sans-serif
+    }
+
+@page {
+    margin-bottom: 5pt;
+    margin-top: 0pt
+    }
+
+
+
+
+
+
+
+
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 80%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  left: 15;
+  background-color: #222;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 3px 8px 3px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*next button*/
+.nextbutton {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  right: 230;
+  background-color: none;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.previousbutton {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  left: 230;
+  background-color: none;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+
+/* Chapter Select */
+.radio {
+    padding: 4px;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+.radio input {
+    margin: 0 auto;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 4px 8px;
+    background: #eee;
+    color: #222;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: all 100ms linear;
+}
+
+.radio input:checked {
+    background-image: linear-gradient(180deg, #95d891, #74bbad);
+    color: #fff;
+    box-shadow: 0 1px 1px #0000002e;
+    text-shadow: 0 1px 0px #79485f7a;
+}
+
+.radio input:before {
+    content: attr(label);
+    display: inline-block;
+    text-align: center;
+    width: 10px;
+    display: flex;
+}
+
+
+/* tables */
+td {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  font-family: "Oregon LDO DemiBold", sans-serif;
+    font-size: 2.125em;
+}
+
+
+.chapter_links{
+    text-decoration: none;
+    background-color: #eee;
+    color: #333;
+    padding: 0px 10px;
+    font-family: "Oregon LDO DemiBold", sans-serif;
+}
+
+.chapter_links_small{
+    font-size: 0.625em;
+}
+
+.chapter_reveal{
+    font-size:20px;
+    color: #eee;
+    background-color: #333;
+}
