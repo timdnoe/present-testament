@@ -331,12 +331,6 @@
 
 
 
-
-
-
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 80%;
@@ -441,48 +435,6 @@
 }
 
 
-/* Chapter Select */
-.radio {
-    padding: 4px;
-    border-radius: 3px;
-    position: relative;
-    display: flex;
-    margin: 0 auto;
-}
-
-.radio input {
-    margin: 0 auto;
-    height: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 2px;
-    padding: 4px 8px;
-    background: #eee;
-    color: #222;
-    font-size: 22px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    transition: all 100ms linear;
-}
-
-.radio input:checked {
-    background-image: linear-gradient(180deg, #95d891, #74bbad);
-    color: #fff;
-    box-shadow: 0 1px 1px #0000002e;
-    text-shadow: 0 1px 0px #79485f7a;
-}
-
-.radio input:before {
-    content: attr(label);
-    display: inline-block;
-    text-align: center;
-    width: 10px;
-    display: flex;
-}
 
 
 /* tables */
@@ -513,4 +465,19 @@ table {
     font-size:20px;
     color: #eee;
     background-color: #333;
+}
+
+.central{
+    text-align: center;
+    background-color:#999999;
+}
+
+.central_mid{
+    width:600px;
+    min-height: 800px;
+    margin: 0 auto;
+    background-color:white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
 }
