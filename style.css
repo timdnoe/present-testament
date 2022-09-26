@@ -13,6 +13,7 @@ body {
 
 .central_mid{
     width:50%;
+    max-width: 600px;
     min-height: 800px;
     margin: 0 auto;
     background-color:white;
