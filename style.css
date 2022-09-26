@@ -1,5 +1,19 @@
-.testament_title {
-    display: block;
+.central{
+    text-align: center;
+    background-color:#999999;
+}
+
+.central_mid{
+    width:600px;
+    min-height: 800px;
+    margin: 0 auto;
+    background-color:white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+#testament_title {
+    display: inline-block;
     position: fixed;
     left: 0;
     top: 0;
@@ -19,8 +33,34 @@
     padding-right: 0;
     padding-top: 10;
     text-align: center;
-    text-indent: 0.75pt
+    text-indent: 0pt
     }
+
+#headingBookNumber{
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 50;
+    width: 100%;
+    background-color: white;
+    font-family: "Oregon LDO", sans-serif;
+    font-size: 1em;
+    color:#999;
+    font-variant: none;
+    line-height: 1.0;
+    padding-bottom: 5;
+    padding-left: 0;
+    padding-right: 40%;
+    padding-top: 5;
+    text-align: center;
+    text-indent: 0pt;
+    align: center;
+}
+
+#pt{
+    text-align:center;
+}
+
 .book_pre_title {
     display: block;
     font-family: "PMingLiU-ExtB", serif;
@@ -467,17 +507,3 @@ table {
     background-color: #333;
 }
 
-.central{
-    text-align: center;
-    background-color:#999999;
-}
-
-.central_mid{
-    width:600px;
-    min-height: 800px;
-    margin: 0 auto;
-    background-color:white;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-}
