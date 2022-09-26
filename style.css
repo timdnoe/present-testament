@@ -1,17 +1,68 @@
+body {
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
 .central{
-    text-align: center;
-    background-color:#999999;
+    background-color:#999;
 }
 
 .central_mid{
-    width:600px;
+    width:50%;
     min-height: 800px;
     margin: 0 auto;
     background-color:white;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+/*next button*/
+.nextbutton {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  left: 75%;
+  background-color: none;
+  overflow-x: hidden;
+  padding-top: 0px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+.next {
+  background-color: #bbb;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.round {
+  border-radius: 0%;
+}
+
+.previousbutton {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  right: 75%;
+  background-color: none;
+  overflow-x: hidden;
+  padding-top: 0px;
+  padding-right: 20px;
+}
+
+
 #testament_title {
     display: inline-block;
     position: fixed;
@@ -54,7 +105,7 @@
     padding-top: 5;
     text-align: center;
     text-indent: 0pt;
-    align: center;
+    border-bottom: 1px solid #999;
 }
 
 #pt{
@@ -269,8 +320,8 @@
     font-size: 1.125em;
     line-height: 1.2;
     margin-bottom: 0;
-    margin-left: 5pt;
-    margin-right: 5pt;
+    margin-left: 0pt;
+    margin-right: 0pt;
     margin-top: 0;
     padding-left: 0;
     padding-right: 0
@@ -373,15 +424,15 @@
 
 /* Fixed sidenav, full height */
 .sidenav {
-  height: 80%;
+  height: 100%;
   width: 220px;
   position: fixed;
   z-index: 1;
-  top: 10%;
+  top: 80px;
   left: 15;
   background-color: #222;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -435,47 +486,6 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-
-/*next button*/
-.nextbutton {
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  z-index: 1;
-  top: 40%;
-  right: 230;
-  background-color: none;
-  overflow-x: hidden;
-  padding-top: 0px;
-}
-
-.next {
-  background-color: #04AA6D;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-
-.round {
-  border-radius: 50%;
-}
-
-.previousbutton {
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  z-index: 1;
-  top: 40%;
-  left: 230;
-  background-color: none;
-  overflow-x: hidden;
-  padding-top: 0px;
-}
-
-
-
 
 /* tables */
 td {
