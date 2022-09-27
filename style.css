@@ -50,6 +50,17 @@ body {
   border-radius: 0%;
 }
 
+@media (min-width: 1200px) {
+  .previousbutton {
+    right: 50% !important;
+    padding-right: 320px !important;
+  }
+  .nextbutton {
+    left: 50% !important;
+    padding-left: 320px !important;
+  }
+}
+
 .previousbutton {
   height: 40px;
   width: 40px;
