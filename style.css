@@ -7,6 +7,7 @@ body {
     margin-left: 0px;
 }
 
+
 .central{
     background-color:#999;
 }
@@ -21,6 +22,15 @@ body {
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+#bookNum{
+    position: fixed;
+    right: 68%;
+}
+#bookTitle{
+    position:fixed;
+    left:68%;
 }
 
 /*next button*/
@@ -60,6 +70,14 @@ body {
   .nextbutton {
     left: 50% !important;
     padding-left: 320px !important;
+  }
+  #bookNum{
+    right: 50% !important;
+    padding-right: 220px !important;
+  }
+  #bookTitle{
+    left: 50% !important;
+    padding-left: 220px !important;
   }
 }
 
