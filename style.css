@@ -12,17 +12,7 @@ body {
     background-color:#999;
 }
 
-.central_mid{
-    width:50%;
-    max-width: 600px;
-    min-height: 100%;
-    margin: 0 auto;
-    background-color:white;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
+
 
 #bookNum{
     position: fixed;
@@ -33,7 +23,51 @@ body {
     left:68%;
 }
 
-/*next button*/
+
+
+@media (max-width: 1200px){
+    .central_mid{
+        min-height: 100%;
+        margin: 0 auto;
+        background-color:white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left:220px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .central_mid{
+        width:50%;
+        max-width: 600px;
+        min-height: 100%;
+        margin: 0 auto;
+        background-color:white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+  .previousbutton {
+    right: 50% !important;
+    padding-right: 320px !important;
+  }
+  .nextbutton {
+    left: 50% !important;
+    padding-left: 320px !important;
+  }
+  #bookNum{
+    right: 50% !important;
+    padding-right: 220px !important;
+  }
+  #bookTitle{
+    left: 50% !important;
+    padding-left: 220px !important;
+  }
+  /*next button*/
 .nextbutton {
   height: 40px;
   width: 40px;
@@ -62,25 +96,6 @@ body {
   border-radius: 0%;
 }
 
-@media (min-width: 1200px) {
-  .previousbutton {
-    right: 50% !important;
-    padding-right: 320px !important;
-  }
-  .nextbutton {
-    left: 50% !important;
-    padding-left: 320px !important;
-  }
-  #bookNum{
-    right: 50% !important;
-    padding-right: 220px !important;
-  }
-  #bookTitle{
-    left: 50% !important;
-    padding-left: 220px !important;
-  }
-}
-
 .previousbutton {
   height: 40px;
   width: 40px;
@@ -93,7 +108,7 @@ body {
   padding-top: 0px;
   padding-right: 20px;
 }
-
+}
 
 #testament_title {
     display: inline-block;
@@ -461,10 +476,10 @@ body {
   position: fixed;
   z-index: 1;
   top: 80px;
-  left: 15;
+  left: 0;
   background-color: #222;
   overflow-x: hidden;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -485,6 +500,11 @@ body {
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
+}
+
+.submenu{
+    font-size: 20px;
+    line-height: 16pt;
 }
 
 /* Main content */
@@ -514,10 +534,17 @@ body {
 }
 
 /* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) 
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+/* Add an active class to the active dropdown button */
+.active_sub {
+  background-color: green;
+  color: white !important;
+}
+
 
 /* tables */
 td {
