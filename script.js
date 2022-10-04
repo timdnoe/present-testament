@@ -11,7 +11,7 @@ function displayMenu() {
         checked = 0;
     }
     else{
-        html_div.style.height = "400px";
+        html_div.style.height = "800px";
         checked = 1;
     }
     
