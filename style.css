@@ -184,12 +184,30 @@ body {
         background-color:white;
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 40px;
+        padding-top: 71px;
         padding-bottom: 40px;
     }
     .sidenav{
     display:none;
     }
+    #testament_title {
+        font-size: 3.0em;
+    }
+    #headingBookNumber{
+    top: 70;
+}
+#headingBookNumber{
+    font-size: 1.6em;
+}
+.book_pre_title {
+    font-size: 2.5em;
+}
+.book_title {
+    font-size: 4.0em;
+    }
+    .book_post_title {
+    font-size: 2.5em;
+}
 }
 
 @media (min-width: 1200px) {
@@ -207,6 +225,12 @@ body {
     .wrapper {
         display:none;
 }
+#testament_title {
+        font-size: 2.07778em;
+    }
+    #headingBookNumber{
+    top: 50;
+}
   .previousbutton {
     right: 50% !important;
     padding-right: 320px !important;
@@ -223,6 +247,18 @@ body {
     left: 50% !important;
     padding-left: 220px !important;
   }
+  #headingBookNumber{
+    font-size: 1em;
+}
+.book_pre_title {
+    font-size: 1.6em;
+}
+.book_title {
+    font-size: 2.77778em;
+    }
+    .book_post_title {
+    font-size: 1.6em;
+}
   /*next button*/
 .nextbutton {
   height: 40px;
@@ -274,7 +310,6 @@ body {
     width: 100%;
     background-color: white;
     font-family: "PMingLiU-ExtB", serif;
-    font-size: 2.07778em;
     color:#999;
     font-variant: small-caps;
     line-height: 1.0;
@@ -294,11 +329,9 @@ body {
     display: inline-block;
     position: fixed;
     left: 0;
-    top: 50;
     width: 100%;
     background-color: white;
     font-family: "Oregon LDO", sans-serif;
-    font-size: 1em;
     color:#999;
     font-variant: none;
     line-height: 1.0;
@@ -318,7 +351,6 @@ body {
 .book_pre_title {
     display: block;
     font-family: "PMingLiU-ExtB", serif;
-    font-size: 1.60000em;
     font-style: italic;
     font-variant: small-caps;
     line-height: 1.2;
@@ -339,7 +371,6 @@ body {
 .book_title {
     display: block;
     font-family: "PMingLiU-ExtB", serif;
-    font-size: 2.77778em;
     font-variant: small-caps;
     font-weight: normal;
     letter-spacing: -0.7pt;
@@ -357,7 +388,6 @@ body {
 .book_post_title {
     display: block;
     font-family: "PMingLiU-ExtB", serif;
-    font-size: 1.6em;
     font-style: italic;
     font-variant: small-caps;
     line-height: 1.2;
