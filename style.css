@@ -177,6 +177,15 @@ body {
   font-family: sans-serif;
 }
 
+.submenu_mobile{
+    font-size:3em !important;
+    line-height:1.5em !important;
+}
+.submenu_mobile_title{
+    font-size:2em !important;
+    line-height:1.5em !important;
+}
+
 @media (max-width: 1200px){
     .central_mid{
         min-height: 100%;
@@ -208,6 +217,12 @@ body {
     .book_post_title {
     font-size: 2.5em;
 }
+.chapter_number {
+    font-size: 4.25em;
+    }
+    table {
+    font-size: 4.125em;
+}
 }
 
 @media (min-width: 1200px) {
@@ -231,6 +246,9 @@ body {
     #headingBookNumber{
     top: 50;
 }
+.chapter_number {
+    font-size: 2.25em;
+    }
   .previousbutton {
     right: 50% !important;
     padding-right: 320px !important;
@@ -299,6 +317,9 @@ body {
   overflow-x: hidden;
   padding-top: 0px;
   padding-right: 20px;
+}
+table {
+    font-size: 2.125em;
 }
 }
 
@@ -442,7 +463,6 @@ body {
     color: #000;
     display: block;
     font-family: "Oregon LDO", sans-serif;
-    font-size: 2.25em;
     line-height: 1.0;
     margin-bottom: 0;
     margin-left: 0;
@@ -740,7 +760,6 @@ td {
 table {
   width: 100%;
   font-family: "Oregon LDO DemiBold", sans-serif;
-    font-size: 2.125em;
 }
 
 
