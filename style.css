@@ -50,14 +50,14 @@ nav .m-menu {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 450px;
+  max-width: 650px;
   width: calc(100vw - 30px);
   height: 100%;
-  -moz-transform: translate3d(-450px, 0, 0);
-  -o-transform: translate3d(-450px, 0, 0);
-  -ms-transform: translate3d(-450px, 0, 0);
-  -webkit-transform: translate3d(-450px, 0, 0);
-  transform: translate3d(-450px, 0, 0);
+  -moz-transform: translate3d(-650px, 0, 0);
+  -o-transform: translate3d(-650px, 0, 0);
+  -ms-transform: translate3d(-650px, 0, 0);
+  -webkit-transform: translate3d(-650px, 0, 0);
+  transform: translate3d(-650px, 0, 0);
   -moz-transition: transform 0.35s;
   -o-transition: transform 0.35s;
   -webkit-transition: transform 0.35s;
@@ -96,11 +96,11 @@ nav .m-menu__header span {
   width: 100%;
 }
 nav .m-menu .m-menu {
-  -moz-transform: translate3d(480px, 0, 0);
-  -o-transform: translate3d(480px, 0, 0);
-  -ms-transform: translate3d(480px, 0, 0);
-  -webkit-transform: translate3d(480px, 0, 0);
-  transform: translate3d(480px, 0, 0);
+  -moz-transform: translate3d(680px, 0, 0);
+  -o-transform: translate3d(680px, 0, 0);
+  -ms-transform: translate3d(680px, 0, 0);
+  -webkit-transform: translate3d(680px, 0, 0);
+  transform: translate3d(680px, 0, 0);
 }
 nav .m-menu ul {
   height: 100%;
@@ -218,7 +218,8 @@ body {
     font-size: 2.5em;
 }
 .chapter_number {
-    font-size: 25vw;
+    font-size: 10vw;
+    line-height: 1em !important;
     }
     table {
     font-size: 4.125em;
@@ -781,3 +782,70 @@ table {
     background-color: #333;
 }
 
+.tooltip {
+  position: relative;
+  display: inline;
+  border-bottom: 2px dotted #8eff91;
+  text-decoration: none;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: flex;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px;
+  padding: 5px 0px;
+  padding-right: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ot_text{
+  border-bottom: 2px dotted red;
+}
+
+.nt_text{
+  border-bottom: 2px dotted green;
+}
+
+.pt_text{
+  border-bottom: 2px dotted blue;
+}
+
+.ot_box{
+  background-color: red;
+}
+
+.nt_box{
+  background-color: green;
+}
+
+.pt_box{
+  background-color: blue;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.highlight {
+  background-color: yellow;
+}

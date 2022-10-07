@@ -1,6 +1,4 @@
 
-
-
 var checked = 0;
 function displayMenu() {
     var html_div = document.getElementById("wrapper");
@@ -17,9 +15,23 @@ function displayMenu() {
     
 }
 
+function scrollToVerse(versereference){
+    const element = document.getElementById(versereference);
+    element.scrollIntoView();
+    window.scrollBy(0,-80);
+}
 
+function highlight(text, id) {
+  var inputText = document.getElementById(id);
+  var innerHTML = inputText.innerHTML;
+  var index = innerHTML.indexOf(text);
+  if (index >= 0) { 
+   innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
+   inputText.innerHTML = innerHTML;
+  }
+}
 
-function showText(booknumber,chapternumber,closemobile) {
+function showText(booknumber,chapternumber,closemobile,versereference) {
     var book_id;
     var chapter_id;
     var html_div;
@@ -81,6 +93,17 @@ function showText(booknumber,chapternumber,closemobile) {
         displayMenu()
     }
     updateHeader();
+    if(versereference){
+        var element = document.getElementById(versereference);
+        var result = element.innerHTML;
+        scrollToVerse(versereference);
+        highlight(result, versereference);
+        //console.log("yes");
+    }
+    else{
+        window.scrollTo(0, 0);
+    }
+    
 }
 
 function correctPageLoad() {
@@ -92,11 +115,24 @@ function correctPageLoad() {
     if (book){
         html_div = document.getElementById(book_name);
         html_div.style.display = "block";
+
+        if (currentBook && currentBook != book){
+            book_id = "book_" + currentBook;
+            html_div = document.getElementById(book_id);
+            html_div.style.display = "none";
+            }
+        if (currentChapter){
+                    chapter_id = "chapter_" + currentChapter;
+                    html_div = document.getElementById(chapter_id);
+                    //console.log(chapter_id1);
+                    html_div.style.display = "none";
+                }
+
         currentBook = book;
         var chapter = qs(url,'chapter')
         if (chapter){
             var chapter_name = "chapter_" + chapter;
-            //console.log(chapter_name);
+            //console.log(chapter_name + "&&&");
             html_div = document.getElementById(chapter_name);
             html_div.style.display = "block";
             currentChapter = chapter;
@@ -112,7 +148,7 @@ function correctPageLoad() {
         currentChapter = "1191";
     }
     updateHeader();
-
+    //window.scrollTo(0, 0);
 }
 
 function chapterMenuReveal(menunumber) {      
@@ -229,7 +265,7 @@ function checkBook(book){
 function getBookByChapter(){
     var output = chapterListings.filter(checkBook);
 
-    console.log(output.length);
+    //console.log(output.length);
     var index = output.length;
     //console.log(index);
     if (index < 10){
@@ -270,7 +306,7 @@ function updateHeader(){
     }
     oldBook = currentBook;
     html_div = document.getElementById(currentBook + "_menu");
-    console.log(currentBook + "_menu")
+    //console.log(currentBook + "_menu")
     //html_div = document.getElementById("Miracles_menu");
     html_div.classList.add("active");
     
