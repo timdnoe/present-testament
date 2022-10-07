@@ -344,7 +344,8 @@ table {
     padding-right: 0;
     padding-top: 10;
     text-align: center;
-    text-indent: 0pt
+    text-indent: 0pt;
+    z-index: 1;
     }
 
 #headingBookNumber{
@@ -364,6 +365,7 @@ table {
     text-align: center;
     text-indent: 0pt;
     border-bottom: 1px solid #999;
+    z-index: 1;
 }
 
 #pt{
@@ -787,47 +789,55 @@ table {
   display: inline;
   border-bottom: 2px dotted #8eff91;
   text-decoration: none;
+  z-index: 0;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: flex;
+  min-width: 150px;
   color: #fff;
   text-align: center;
-  border-radius: 0px;
-  padding: 5px 0px;
-  padding-right: 15px;
+  border-radius: 6px;
+  padding: 10px 0px;
+  padding-right: 10px;
+  padding-left: 10px;
   position: absolute;
-  z-index: 1;
   bottom: 125%;
   left: 0%;
   margin-left: 0px;
   opacity: 0;
   transition: opacity 0.3s;
+  font-family: "Oregon LDO DemiBold", sans-serif;
+}
+
+.tooltiptext{
+
+  z-index: 1;
 }
 
 .ot_text{
-  border-bottom: 2px dotted red;
+  border-bottom: 2px dotted #820000;
 }
 
 .nt_text{
-  border-bottom: 2px dotted green;
+  border-bottom: 2px dotted #068200;
 }
 
 .pt_text{
-  border-bottom: 2px dotted blue;
+  border-bottom: 2px dotted #001282;
 }
 
 .ot_box{
-  background-color: red;
+  background: rgba(130,0,0,0.9);
 }
 
 .nt_box{
-  background-color: green;
+  background: rgba(6,130,0,0.9);
 }
 
 .pt_box{
-  background-color: blue;
+  background: rgba(0,18,130,0.9);
 }
 
 .tooltip .tooltiptext::after {
@@ -844,6 +854,10 @@ table {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.tooltip_breaks{
+    line-height:8px;
 }
 
 .highlight {
