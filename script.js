@@ -5,11 +5,11 @@ function displayMenu() {
     //console.log("hi");
     //document.getElementById("myBtn").style.height = "50px";
     if (checked){
-        html_div.style.height = "50px";
+        //html_div.style.height = "50px";
         checked = 0;
     }
     else{
-        html_div.style.height = "800px";
+        //html_div.style.height = "800px";
         checked = 1;
     }
     
