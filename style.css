@@ -23,7 +23,7 @@ body {
     left:68%;
 }
 
-   * {
+* {
   padding: 0;
   margin: 0;
 }
@@ -48,7 +48,8 @@ nav label.m-menu__toggle {
   z-index:3;
 }
 nav .burger{
-  margin-top:-150px !important;
+  margin-top:-80px !important;
+  margin-left:-30px !important;
   position: fixed;
 }
 nav .m-menu {
@@ -192,47 +193,47 @@ body {
 }
 
 @media (max-width: 1200px){
-    .central_mid{
+  .central_mid{
         min-height: 100%;
         margin: 0 auto;
         background-color:white;
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 71px;
+        padding-top: 20px;
         padding-bottom: 40px;
     }
-    .sidenav{
+  .sidenav{
     display:none;
     }
-    #testament_title {
+  #testament_title {
         font-size: 6vw;
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-    #headingBookNumber{
+  #headingBookNumber{
     top: 70;
     font-size: 3vw !important;
-}
-#bookNum{
-  padding-left: 100px;
-  font-size: 3vw !important;
-}
-.book_pre_title {
-    font-size: 2.5em;
-}
-.book_title {
-    font-size: 4.0em;
-    }
-.book_post_title {
-    font-size: 2.5em;
-}
-.chapter_number {
-    font-size: 10vw;
-    line-height: 1em !important;
-    }
-    table {
-    font-size: 4.125em;
-}
+  }
+  #bookNum{
+    padding-left: 100px;
+    font-size: 3vw !important;
+  }
+  .book_pre_title {
+      font-size: 2.5em;
+  }
+  .book_title {
+      font-size: 4.0em;
+      }
+  .book_post_title {
+      font-size: 2.5em;
+  }
+  .chapter_number {
+      font-size: 10vw;
+      line-height: 1em !important;
+      }
+  table {
+      font-size: 4.125em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -249,15 +250,15 @@ body {
     }
     .wrapper {
         display:none;
-}
-#testament_title {
-        font-size: 2.07778em;
-    }
-    #headingBookNumber{
-    top: 50;
-}
-.chapter_number {
-    font-size: 2.25em;
+  }
+  #testament_title {
+          font-size: 2.07778em;
+      }
+      #headingBookNumber{
+      top: 50;
+  }
+  .chapter_number {
+      font-size: 2.25em;
     }
   .previousbutton {
     right: 50% !important;
@@ -277,60 +278,63 @@ body {
   }
   #headingBookNumber{
     font-size: 1em;
-}
-.book_pre_title {
-    font-size: 1.6em;
-}
-.book_title {
-    font-size: 2.77778em;
-    }
-    .book_post_title {
-    font-size: 1.6em;
-}
-  /*next button*/
-.nextbutton {
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  z-index: 1;
-  top: 40%;
-  left: 75%;
-  background-color: none;
-  overflow-x: hidden;
-  padding-top: 0px;
-  padding-left: 20px;
-  margin: 0 auto;
-}
+  }
+  .book_pre_title {
+      font-size: 1.6em;
+  }
+  .book_title {
+      font-size: 2.77778em;
+      }
+      .book_post_title {
+      font-size: 1.6em;
+  }
+    /*next button*/
+  .nextbutton {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    left: 75%;
+    background-color: none;
+    overflow-x: hidden;
+    padding-top: 0px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
 
-.next {
-  background-color: #bbb;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  border: 0px solid #fff;
-  font-size:16px;
-}
+  .next {
+    background-color: #bbb;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 0px solid #fff;
+    font-size:16px;
+  }
 
-.round {
-  border-radius: 0%;
-}
+  .round {
+    border-radius: 0%;
+  }
 
-.previousbutton {
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  z-index: 1;
-  top: 40%;
-  right: 75%;
-  background-color: none;
-  overflow-x: hidden;
-  padding-top: 0px;
-  padding-right: 20px;
-}
-table {
-    font-size: 2.125em;
-}
+  .previousbutton {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    right: 75%;
+    background-color: none;
+    overflow-x: hidden;
+    padding-top: 0px;
+    padding-right: 20px;
+  }
+  table {
+      font-size: 2.125em;
+  }
+  nav .burger{
+    display:none;
+  }
 }
 
 #testament_title {
@@ -355,7 +359,7 @@ table {
     text-align: center;
     text-indent: 0pt;
     z-index: 1;
-    }
+  }
 
 #headingBookNumber{
     display: inline-block;
@@ -394,12 +398,12 @@ table {
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 50;
+    padding-top: 0;
     page-break-after: avoid;
     page-break-before: always;
     page-break-inside: avoid;
     text-align: center;
-    text-indent: 0.75pt
+    text-indent: 0pt
     }
 .book_title {
     display: block;
@@ -435,7 +439,7 @@ table {
     page-break-after: avoid;
     page-break-inside: avoid;
     text-align: center;
-    text-indent: 5.75pt
+    text-indent: 0pt
     }
 .verse_chapter_number {
     display: block;
@@ -451,7 +455,7 @@ table {
     padding-right: 0;
     padding-top: 0;
     text-align: justify;
-    text-indent: 15pt
+    text-indent: 40pt
     }
 .section_title {
     color: #000;
