@@ -48,7 +48,7 @@ nav label.m-menu__toggle {
   z-index:3;
 }
 nav .burger{
-  margin-top:-80px !important;
+  margin-top: 0px !important;
   margin-left:-30px !important;
   position: fixed;
 }
@@ -187,6 +187,10 @@ body {
     font-size:3em !important;
     line-height:1.5em !important;
 }
+.submenu_mobile2{
+    font-size:2em !important;
+    line-height:1.5em !important;
+}
 .submenu_mobile_title{
     font-size:2em !important;
     line-height:1.5em !important;
@@ -233,6 +237,47 @@ body {
       }
   table {
       font-size: 4.125em;
+  }
+
+    .nextbutton {
+    height: 100px;
+    width: 40px;
+    position: fixed;
+    z-index: 3;
+    top: 5%;
+    right: 0%;
+    background-color: none;
+    overflow-x: hidden;
+    padding-top: 0px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+
+  .next {
+    background-color: #bbb;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 16px;
+    border: 0px solid #fff;
+    font-size:16px;
+  }
+
+  .round {
+    border-radius: 0%;
+  }
+
+  .previousbutton {
+    height: 100px;
+    width: 40px;
+    position: fixed;
+    z-index: 3;
+    top: 5%;
+    right: 5%;
+    background-color: none;
+    overflow-x: hidden;
+    padding-top: 0px;
+    padding-right: 20px;
   }
 }
 
@@ -348,6 +393,7 @@ body {
     color:#999;
     font-variant: small-caps;
     line-height: 1.0;
+    min-height: 70px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -373,12 +419,15 @@ body {
     line-height: 1.0;
     padding-bottom: 5;
     padding-left: 0;
-    padding-right: 40%;
+    padding-right: 0;
     padding-top: 5;
     text-align: center;
     text-indent: 0pt;
     border-bottom: 1px solid #999;
     z-index: 1;
+}
+#bookNum{
+  min-width:100px;
 }
 
 #pt{
