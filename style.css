@@ -223,6 +223,7 @@ body {
     font-size: 3vw !important;
   }
   .book_pre_title {
+    padding-top:100px !important;
       font-size: 2.5em;
   }
   .book_title {
@@ -241,15 +242,15 @@ body {
 
     .nextbutton {
     height: 100px;
-    width: 40px;
+    width: 100%;
     position: fixed;
     z-index: 3;
     top: 5%;
-    right: 0%;
+    left: 50%;
     background-color: none;
     overflow-x: hidden;
-    padding-top: 0px;
-    padding-left: 20px;
+    padding-top: 70px;
+    padding-left: 0px;
     margin: 0 auto;
   }
 
@@ -258,9 +259,9 @@ body {
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 20px 16px;
-    border: 0px solid #fff;
-    font-size:16px;
+    padding: 15px 25%;
+    border: 3px solid #555;
+    font-size:24px;
   }
 
   .round {
@@ -269,15 +270,15 @@ body {
 
   .previousbutton {
     height: 100px;
-    width: 40px;
+    width: 100%;
     position: fixed;
     z-index: 3;
     top: 5%;
-    right: 5%;
+    right: 0%;
     background-color: none;
     overflow-x: hidden;
-    padding-top: 0px;
-    padding-right: 20px;
+    padding-top: 70px;
+    padding-right: 0px;
   }
 }
 
