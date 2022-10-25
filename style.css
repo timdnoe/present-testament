@@ -298,37 +298,29 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-    .central_mid{
-        width:50%;
-        max-width: 600px;
-        min-height: 100%;
-        margin: 0 auto;
-        background-color:white;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .wrapper {
-        display:none;
+@media (min-width: 1201px) {
+  .central_mid{
+    width:50%;
+    max-width: 600px;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color:white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .wrapper {
+    display:none;
   }
   #testament_title {
-          font-size: 2.07778em;
-      }
-      #headingBookNumber{
-      top: 50;
+    font-size: 2.07778em;
+  }
+  #headingBookNumber{
+    top: 50;
   }
   .chapter_number {
-      font-size: 2.25em;
-    }
-  .previousbutton {
-    right: 50% !important;
-    padding-right: 320px !important;
-  }
-  .nextbutton {
-    left: 50% !important;
-    padding-left: 320px !important;
+    font-size: 2.25em;
   }
   #bookNum{
     right: 50% !important;
@@ -345,15 +337,17 @@ body {
       font-size: 1.6em;
   }
   .book_title {
-      font-size: 2.77778em;
-      }
-      .book_post_title {
-      font-size: 1.6em;
+    font-size: 2.77778em;
+  }
+  .book_post_title {
+    font-size: 1.6em;
   }
     /*next button*/
   .nextbutton {
     height: 40px;
     width: 40px;
+    left: 50% !important;
+    margin-left: 320px !important;
     position: fixed;
     z-index: 1;
     top: 40%;
@@ -361,7 +355,7 @@ body {
     background-color: none;
     overflow-x: hidden;
     padding-top: 0px;
-    padding-left: 20px;
+    padding-left: 0px;
     margin: 0 auto;
   }
 
@@ -381,15 +375,16 @@ body {
 
   .previousbutton {
     height: 40px;
-    width: 40px;
+    width: 40px !important;
     position: fixed;
     z-index: 1;
     top: 40%;
-    right: 75%;
+    right: 50%;
+    margin-right:320px;
     background-color: none;
     overflow-x: hidden;
     padding-top: 0px;
-    padding-right: 20px;
+    padding-right: 2px;
   }
   table {
       font-size: 2.125em;
@@ -811,6 +806,7 @@ body {
   display: none;
   background-color: #262626;
   padding-left: 8px;
+  padding-bottom: 100px;
 }
 
 /* Optional: Style the caret down icon */
