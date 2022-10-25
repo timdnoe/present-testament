@@ -198,37 +198,44 @@ body {
 
 @media (max-width: 1200px){
   .central_mid{
-        min-height: 100%;
-        margin: 0 auto;
-        background-color:white;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 20px;
-        padding-bottom: 40px;
+      min-height: 100%;
+      margin: 0 auto;
+      background-color:white;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 20px;
+      padding-bottom: 40px;
     }
   .sidenav{
     display:none;
     }
   #testament_title {
-        font-size: 6vw;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+      font-size: 6vw;
+      min-height:100px;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      height:100px !important;
     }
   #headingBookNumber{
     top: 70;
     font-size: 3vw !important;
+    border: 10px solid #fff;
+    min-height: 80px;
   }
   #bookNum{
-    padding-left: 100px;
+    margin-left: 200px !important;
     font-size: 3vw !important;
+
   }
   .book_pre_title {
     padding-top:100px !important;
-      font-size: 2.5em;
+    font-size: 2.5em;
+    margin-top: 20pt;
   }
   .book_title {
       font-size: 4.0em;
-      }
+
+    }
   .book_post_title {
       font-size: 2.5em;
   }
@@ -240,12 +247,12 @@ body {
       font-size: 4.125em;
   }
 
-    .nextbutton {
+  .nextbutton {
     height: 100px;
     width: 100%;
     position: fixed;
     z-index: 3;
-    top: 5%;
+    top: 50px;
     left: 50%;
     background-color: none;
     overflow-x: hidden;
@@ -273,7 +280,7 @@ body {
     width: 100%;
     position: fixed;
     z-index: 3;
-    top: 5%;
+    top: 50px;
     right: 0%;
     background-color: none;
     overflow-x: hidden;
@@ -428,7 +435,7 @@ body {
     z-index: 1;
 }
 #bookNum{
-  min-width:100px;
+  min-width:200px;
 }
 
 #pt{
@@ -444,7 +451,6 @@ body {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 6pt;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
