@@ -46,6 +46,7 @@ nav .m-menu__checkbox {
 nav label.m-menu__toggle {
   cursor: pointer;
   z-index:3;
+
 }
 nav .burger{
   margin-top: 0px !important;
@@ -54,6 +55,7 @@ nav .burger{
 }
 nav .m-menu {
   position: fixed;
+  padding-top:30px;
   top: 0;
   left: 0;
   max-width: 650px;
@@ -74,12 +76,13 @@ nav .m-menu {
 }
 nav .m-menu__overlay {
   background-color: rgba(103, 103, 103, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   bottom: 0;
   z-index: 4;
   display: none;
+  height: flex;
 }
 nav .m-menu__header {
   padding: 0 1px;
@@ -94,6 +97,7 @@ nav .m-menu__header {
   -webkit-align-items: center;
   align-items: center;
   border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 20px;
 }
 nav .m-menu__header span {
   font-size: 1.2rem;
@@ -191,6 +195,9 @@ body {
     font-size:2em !important;
     line-height:1.5em !important;
 }
+.mobile_menu_title{
+    font-size:1em !important;
+}
 .submenu_mobile_title{
     font-size:2em !important;
     line-height:1.5em !important;
@@ -217,15 +224,17 @@ body {
       height:100px !important;
     }
   #headingBookNumber{
+
     top: 70;
     font-size: 3vw !important;
     border: 10px solid #fff;
     min-height: 80px;
+
   }
   #bookNum{
-    margin-left: 200px !important;
     font-size: 3vw !important;
-
+    left:15vw !important;
+    padding-left: 20px !important;
   }
   .book_pre_title {
     padding-top:100px !important;
@@ -235,7 +244,7 @@ body {
   .book_title {
       font-size: 4.0em;
 
-    }
+  }
   .book_post_title {
       font-size: 2.5em;
   }
@@ -266,9 +275,9 @@ body {
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 15px 25%;
+    padding: 5px 25%;
     border: 3px solid #555;
-    font-size:24px;
+    font-size:48px;
   }
 
   .round {
@@ -418,7 +427,7 @@ body {
 #headingBookNumber{
     display: inline-block;
     position: fixed;
-    left: 0;
+    left:0;
     width: 100%;
     background-color: white;
     font-family: "Oregon LDO", sans-serif;
@@ -426,7 +435,6 @@ body {
     font-variant: none;
     line-height: 1.0;
     padding-bottom: 5;
-    padding-left: 0;
     padding-right: 0;
     padding-top: 5;
     text-align: center;
@@ -435,7 +443,7 @@ body {
     z-index: 1;
 }
 #bookNum{
-  min-width:200px;
+  min-width:220px;
 }
 
 #pt{
