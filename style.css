@@ -8,6 +8,7 @@ body {
 }
 
 
+
 .central{
     background-color:#999;
 }
@@ -204,6 +205,13 @@ body {
 }
 
 @media (max-width: 1200px){
+  #corner_logo{
+    position:fixed;
+    right:30;
+    top:10;
+    height:70px;
+    z-index:3;
+  }
   .central_mid{
       min-height: 100%;
       margin: 0 auto;
@@ -299,6 +307,13 @@ body {
 }
 
 @media (min-width: 1201px) {
+  #corner_logo{
+    position:fixed;
+    left:60;
+    top:10;
+    height:70px;
+    z-index:3;
+  }
   .central_mid{
     width:50%;
     max-width: 600px;
@@ -786,6 +801,7 @@ body {
 .submenu{
     font-size: 20px;
     line-height: 16pt;
+  padding-bottom: 200px;
 }
 
 /* Main content */
@@ -799,6 +815,7 @@ body {
 .active {
   background-color: green;
   color: white;
+  padding-bottom: 0px;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -806,7 +823,6 @@ body {
   display: none;
   background-color: #262626;
   padding-left: 8px;
-  padding-bottom: 100px;
 }
 
 /* Optional: Style the caret down icon */
