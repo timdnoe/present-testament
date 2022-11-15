@@ -325,14 +325,16 @@ function updateHeader(){
         console.log("updateheader");
     }
     var bookNum = Number(currentBook);
+    //console.log(currentBook);
     var testamentBookNum = 39;
     document.getElementById("testament_title").innerHTML = "The Old Testament";
     var chapter = currentChapter - chapterListings[Number(currentBook) - 1] + 1;
     if (bookNum > 66){
         bookNum = bookNum - 66;
         testamentBookNum = 33;
-        chapter = chapter + firstChapterPT[bookNum - 1];
+        chapter = chapter + firstChapterPT[bookNum - 1] - 1;
         document.getElementById("testament_title").innerHTML = "The Present Testament";
+        //console.log("chapter: " + chapter);
     }else if(bookNum > 39){
         bookNum = bookNum - 39;
         testamentBookNum = 27;

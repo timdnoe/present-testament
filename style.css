@@ -955,3 +955,7 @@ table {
 .highlight {
   background-color: yellow;
 }
+
+.newMenu{
+  display:none;
+}
