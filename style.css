@@ -776,6 +776,8 @@ body {
   background-color: #222;
   overflow-x: hidden;
   padding-top: 20px;
+  font-family: "Oregon LDO DemiBold", sans-serif;
+  font-style: none;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -802,6 +804,7 @@ body {
     font-size: 20px;
     line-height: 16pt;
   padding-bottom: 200px;
+  font-family: "Oregon LDO DemiBold", sans-serif
 }
 
 /* Main content */

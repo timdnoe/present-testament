@@ -1,7 +1,9 @@
-
+var functiondebug = 0;
 var checked = 0;
 function displayMenu() {
-    var html_div = document.getElementById("wrapper");
+    if (functiondebug){
+        console.log("displaymenu");
+    }
     //console.log("hi");
     //document.getElementById("myBtn").style.height = "50px";
     if (checked){
@@ -16,12 +18,18 @@ function displayMenu() {
 }
 
 function scrollToVerse(versereference){
+    if (functiondebug){
+        console.log("scrolltoverse");
+    }
     const element = document.getElementById(versereference);
     element.scrollIntoView();
     window.scrollBy(0,-80);
 }
 
 function highlight(text, id) {
+    if (functiondebug){
+        console.log("highlight");
+    }
   var inputText = document.getElementById(id);
   var innerHTML = inputText.innerHTML;
   var index = innerHTML.indexOf(text);
@@ -32,6 +40,9 @@ function highlight(text, id) {
 }
 
 function showText(booknumber,chapternumber,closemobile,versereference) {
+    if (functiondebug){
+        console.log("showtext");
+    }
     var book_id;
     var chapter_id;
     var html_div;
@@ -41,7 +52,7 @@ function showText(booknumber,chapternumber,closemobile,versereference) {
             book_id = "book_" + currentBook;
             html_div = document.getElementById(book_id);
             html_div.style.display = "none";
-            if (currentChapter){
+            if (currentChapter > -1){
                 chapter_id = "chapter_" + currentChapter;
                 html_div = document.getElementById(chapter_id);
                 //console.log(chapter_id1);
@@ -57,10 +68,10 @@ function showText(booknumber,chapternumber,closemobile,versereference) {
     }
 
     //chapter_div
-    if (chapternumber){
+    if (chapternumber > -1){
         //console.log("Current book: " + currentBook);
         //console.log("Current chapter: " + currentChapter);
-        if (currentChapter){
+        if (currentChapter > -1){
             chapter_id = "chapter_" + currentChapter;
             html_div = document.getElementById(chapter_id);
             html_div.style.display = "none";
@@ -107,6 +118,9 @@ function showText(booknumber,chapternumber,closemobile,versereference) {
 }
 
 function correctPageLoad() {
+    if (functiondebug){
+        console.log("correctpageload");
+    }
     var url = window.location.href;
     var book = qs(url,'book')
     var book_name = "book_" + book;
@@ -121,7 +135,7 @@ function correctPageLoad() {
             html_div = document.getElementById(book_id);
             html_div.style.display = "none";
             }
-        if (currentChapter){
+        if (currentChapter > -1){
                     chapter_id = "chapter_" + currentChapter;
                     html_div = document.getElementById(chapter_id);
                     //console.log(chapter_id1);
@@ -130,7 +144,7 @@ function correctPageLoad() {
 
         currentBook = book;
         var chapter = qs(url,'chapter')
-        if (chapter){
+        if (chapter > -1){
             var chapter_name = "chapter_" + chapter;
             //console.log(chapter_name + "&&&");
             html_div = document.getElementById(chapter_name);
@@ -151,7 +165,10 @@ function correctPageLoad() {
     //window.scrollTo(0, 0);
 }
 
-function chapterMenuReveal(menunumber) {      
+function chapterMenuReveal(menunumber) { 
+    if (functiondebug){
+        console.log("chaptermenureveal");
+    }  
     var html_div;
     //book_div
     if (currentMenu){
@@ -171,6 +188,9 @@ function chapterMenuReveal(menunumber) {
 
 //grab URL id
 function qs(url, key) {
+    if (functiondebug){
+        console.log("qs");
+    }
     var vars = [], hash;
     var hashes = url.slice(url.indexOf('#') + 1).split('&');
     for (var i = 0; i < hashes.length; i++) {
@@ -187,6 +207,9 @@ function qs(url, key) {
 }
 
 function chapterUp(){
+    if (functiondebug){
+        console.log("chapterup");
+    }
     var chapter_id = "chapter_" + currentChapter;
     var html_div = document.getElementById(chapter_id);
     html_div.style.display = "none";
@@ -208,6 +231,9 @@ function chapterUp(){
 }
 
 function chapterDown(){
+    if (functiondebug){
+        console.log("chapterdown");
+    }
     var chapter_id1 = "chapter_" + currentChapter;
     var w = document.getElementById(chapter_id1);
     w.style.display = "none";
@@ -231,6 +257,9 @@ var chapterNames = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy", 
 var firstChapterPT = [0,1,1,0,0,0,1,1,1,0,0,1,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,0,1,0,0];
 
 function getBookByChapter1(){
+    if (functiondebug){
+        console.log("getbookbychapter1");
+    }
     var bookNum;
     //console.log("Current book: " + currentBook);
     for (var i = 0; i <= chapterListings.length; i++){
@@ -259,10 +288,16 @@ function getBookByChapter1(){
 }
 
 function checkBook(book){
+    if (functiondebug){
+        console.log("checkbook");
+    }
     return book <= currentChapter;
 }
 
 function getBookByChapter(){
+    if (functiondebug){
+        console.log("getbookbychapter");
+    }
     var output = chapterListings.filter(checkBook);
 
     //console.log(output.length);
@@ -286,16 +321,22 @@ var input = chapterListings.filter(function(x) { return !predicate(x) })
 
 var oldBook;
 function updateHeader(){
+    if (functiondebug){
+        console.log("updateheader");
+    }
     var bookNum = Number(currentBook);
     var testamentBookNum = 39;
-    var chapter = currentChapter - chapterListings[Number(currentBook) - 1];
+    document.getElementById("testament_title").innerHTML = "The Old Testament";
+    var chapter = currentChapter - chapterListings[Number(currentBook) - 1] + 1;
     if (bookNum > 66){
         bookNum = bookNum - 66;
         testamentBookNum = 33;
         chapter = chapter + firstChapterPT[bookNum - 1];
+        document.getElementById("testament_title").innerHTML = "The Present Testament";
     }else if(bookNum > 39){
         bookNum = bookNum - 39;
         testamentBookNum = 27;
+        document.getElementById("testament_title").innerHTML = "The New Testament";
     }
     document.getElementById("bookNum").innerHTML = "Book " + bookNum + " of " + testamentBookNum;
     document.getElementById("bookTitle").innerHTML = chapterNames[Number(currentBook) - 1] + " " + chapter;
