@@ -153,13 +153,13 @@ function correctPageLoad() {
         }  
     }
     else{
-        var default_page = "book=067&chapter=1191"
-        html_div = document.getElementById("book_067");
+        var default_page = "book=001&chapter=1"
+        html_div = document.getElementById("book_001");
         html_div.style.display = "block";
-        currentBook = "067";
-        html_div = document.getElementById("chapter_1191");
+        currentBook = "001";
+        html_div = document.getElementById("chapter_0");
         html_div.style.display = "block";
-        currentChapter = "1191";
+        currentChapter = "0";
     }
     updateHeader();
     //window.scrollTo(0, 0);
@@ -217,6 +217,12 @@ function chapterUp(){
     if (currentChapter > 1864){
         currentChapter = 1864;
     }
+    else if (currentChapter == 1190){
+        currentChapter = 1191;
+    }
+    else if (currentChapter == 929){
+        currentChapter = 930;
+    }
 
     chapter_id = "chapter_" + currentChapter;
     html_div = document.getElementById(chapter_id);
@@ -238,8 +244,14 @@ function chapterDown(){
     var w = document.getElementById(chapter_id1);
     w.style.display = "none";
     currentChapter--;
-    if (currentChapter < 1191){
-        currentChapter = 1191;
+    if (currentChapter < 0){
+        currentChapter = 0;
+    }
+    else if (currentChapter == 1190){
+        currentChapter = 1189;
+    }
+    else if (currentChapter == 929){
+        currentChapter = 928;
     }
 
     var chapter_id = "chapter_" + currentChapter;
@@ -352,5 +364,10 @@ function updateHeader(){
     //console.log(currentBook + "_menu")
     //html_div = document.getElementById("Miracles_menu");
     html_div.classList.add("active");
+    
+}
+
+
+function hideMenusInDevelopment(){
     
 }

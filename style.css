@@ -529,7 +529,7 @@ body {
     padding-right: 0;
     padding-top: 0;
     text-align: justify;
-    text-indent: 40pt
+    text-indent: 20pt
     }
 .section_title {
     color: #000;
@@ -713,6 +713,58 @@ body {
     font-style: italic;
     letter-spacing: 0
     }
+.text_prose {
+    color: #000;
+    font-family: "Times New Roman", serif;
+    font-size: 1.0em;
+    letter-spacing: 0;
+    margin-right: 10.5pt;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 90;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+    text-indent: -10pt
+    }
+.text_prose_first {
+    display: block;
+    font-family: serif;
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 90;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+    text-indent: -20pt
+    }
+.selah {
+    color: #000;
+    font-family: "Times New Roman", serif;
+    font-size: 1.0em;
+    letter-spacing: 0;
+    margin-right: 10.5pt;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+    text-indent: 80pt;
+    font-variant: small-caps;
+    }
+.small_caps_bold{
+    font-variant: small-caps;
+}
+.small_caps{
+    font-variant: small-caps;
+    font-family: "Times New Roman", serif;
+}
 .text_verse_chapter_number {
     color: #FFF;
     font-family: "Times New Roman", serif;
