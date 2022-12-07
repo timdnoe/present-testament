@@ -153,13 +153,13 @@ function correctPageLoad() {
         }  
     }
     else{
-        var default_page = "book=001&chapter=1"
-        html_div = document.getElementById("book_001");
+        var default_page = "book=067&chapter=1191"
+        html_div = document.getElementById("book_067");
         html_div.style.display = "block";
-        currentBook = "001";
-        html_div = document.getElementById("chapter_0");
+        currentBook = "067";
+        html_div = document.getElementById("chapter_1191");
         html_div.style.display = "block";
-        currentChapter = "0";
+        currentChapter = "1191";
     }
     updateHeader();
     //window.scrollTo(0, 0);
