@@ -1,4 +1,3 @@
-# The Present Testament Online
+# The Present Testament
 
-### An online e-reader of the Bible with Present Testament (A Course in Miracles)
-### Demo here: https://timdnoe.github.io/present-testament
+A reading site, published via GitHub Pages.
